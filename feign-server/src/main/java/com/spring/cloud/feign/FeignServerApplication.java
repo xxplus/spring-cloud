@@ -23,7 +23,7 @@ public class FeignServerApplication {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping("/sayHi")
+    @RequestMapping("/hi")
     public String sayHi(@RequestParam String name){
         return helloService.sayHi(name);
     }
