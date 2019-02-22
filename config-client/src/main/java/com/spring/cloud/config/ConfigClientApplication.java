@@ -1,14 +1,14 @@
 package com.spring.cloud.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.web.bind.annotation.RestController;
 
-@RefreshScope
 @RestController
+@EnableConfigServer
+@SpringBootConfiguration
 @SpringBootApplication
 public class ConfigClientApplication {
 
